@@ -80,6 +80,37 @@ Shortest transaction:           0.00
 
 ----------------------------------------------------------------
 
+### Jetty/DefaultServlet
+
+```
+siege -b -t 3M -c 500 http://localhost:8080/main.css       
+** SIEGE 3.1.0
+** Preparing 500 concurrent users for battle.
+The server is now under siege...
+Lifting the server siege..      done.
+
+Transactions:                5165876 hits
+Availability:                 100.00 %
+Elapsed time:                 179.37 secs
+Data transferred:           13311.57 MB
+Response time:                  0.02 secs
+Transaction rate:           28800.11 trans/sec
+Throughput:                    74.21 MB/sec
+Concurrency:                  497.84
+Successful transactions:     5165876
+Failed transactions:               0
+Longest transaction:           15.04
+Shortest transaction:           0.00
+```
+
+----------------------------------------------------------------
+
+### Jetty/ResourceHandler
+
+Crash caused by mmap in the `ResourceHandler`
+
+----------------------------------------------------------------
+
 ### Lighttpd
 
 ```
