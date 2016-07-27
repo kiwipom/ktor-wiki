@@ -1,5 +1,5 @@
 
-![Ktor](resources/ktor.svg)
+![Ktor](wiki/resources/ktor.png)
 
 * [Getting Started](Getting-Started)
 
