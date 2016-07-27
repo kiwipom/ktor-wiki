@@ -5,7 +5,7 @@
 * [Configuration](Configuration)
 * [Hosting](Hosting)
 * [Lifecycle](Lifecycle)
-* [Automatic Reload](Autoreload)
+* [Automatic Reload](Automatic-Reload)
 * …
 
 ### [Application Call](Application-Call)

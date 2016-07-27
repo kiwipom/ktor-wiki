@@ -1,2 +1,1 @@
-# Under the Hood
 

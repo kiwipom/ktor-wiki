@@ -1,4 +1,5 @@
-# Ktor Documentation
+
+![Ktor](resources/ktor.svg)
 
 * [Getting Started](Getting-Started)
 
