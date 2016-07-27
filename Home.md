@@ -1,4 +1,4 @@
-<img src="https://github.com/Kotlin/ktor/wiki/resources/ktor.png" alt="Ktor" style="width:600px; max-width:100%;">
+<img src="https://github.com/Kotlin/ktor/wiki/resources/ktor.png" alt="Ktor" width="600" style="max-width:100%;">
 
 * [Getting Started](Getting-Started)
 
