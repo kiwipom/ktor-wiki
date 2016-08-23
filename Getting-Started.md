@@ -42,11 +42,13 @@ See also: [Application Configuration](Configuration)
 ### Add routes to application
 In the Application `init` block add routing section:
 ```kotlin
+    init {
         routing {
             get("/") {
                 call.respondText(ContentType.Text.Plain, "Hello, World!")
             }
         }
+    }
 ```
 
 See also: [Routing](Routing)
