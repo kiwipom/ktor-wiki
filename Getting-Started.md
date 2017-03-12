@@ -56,8 +56,7 @@ as needed
 Ktor application is defined by a single function that sets up an Application instance. 
 
 ```kotlin
-fun Application.main() {
-}
+fun Application.main() 
 ```
 
 Application is responsible to process and respond on application calls (http requests). `ApplicationCall` holds both
@@ -77,8 +76,7 @@ fun Application.main() {
 }
 ```
 
-See also: [Application Lifecycle](Lifecycle)
-See also: [Routing](Routing)
+See also: [Routing](Feature-Routing), [Lifecycle](Lifecycle)
 
 ### Create an embedded application
 
@@ -132,8 +130,7 @@ Running hosted application in a development environment is supported by using de
   * Netty: use `org.jetbrains.ktor.netty.DevelopmentHost` 
   * Jetty: use `org.jetbrains.ktor.jetty.DevelopmentHost` 
     
-See also: [Hosting Application](Hosting)
-See also: [Application Configuration](Configuration)
+See also: [Hosting](Hosting), [Configuration](Configuration)
 
 ### Use automatic reloading
 Ktor can automatically reload Application when changes to class files are detected, i.e. when you build the Application.
@@ -151,4 +148,4 @@ ktor {
 }
 ```
 
-See also: [Automatic Reloading](Autoreload)
+See also: [Automatic Reload](Automatic-Reload)

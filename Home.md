@@ -1,6 +1,9 @@
 <img src="https://github.com/Kotlin/ktor/wiki/resources/ktor.png" alt="Ktor" width="600" style="max-width:100%;">
 
-Provides a complete reference to the Ktor application structure, programing interface and how to approach particular tasks.
+Ktor is a framework for quickly creating web applications in Kotlin programming language with minimal effort.
+
+This wiki provides a complete reference to the Ktor application structure, programing interface and 
+how to approach particular tasks.
 
 ## Where to begin
 
@@ -13,7 +16,7 @@ Check our extensive list of [How To](How-To) topics to learn specific features a
 When you want to go deeper into Ktor mechanics, learn how to extend it, develop your own reusable installable features,
  provide transforms, or contribute to the main project, you will need to learn how it works. 
  
-Start with the [Under the Hood](Under-the-Hood) topic, and then see [Advanced Topics](Advanced-Topics).
+See [Advanced](Advanced) topics for more information.
  
 ## Projects
 

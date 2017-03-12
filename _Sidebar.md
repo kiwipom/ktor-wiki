@@ -2,17 +2,12 @@
 * [Getting Started](Getting-Started)
 
 ### [Application](Application) 
-* [Configuration](Configuration)
-* [Hosting](Hosting)
-* [Lifecycle](Lifecycle)
-* [Automatic Reload](Automatic-Reload)
-* [Testing](Testing)
-* …
+* [Configuration](Application-Configuration)
+* [Hosting](Application-Hosting)
+* [Lifecycle](Application-Lifecycle)
+* [Automatic Reload](Application-Autoreload)
+* [Testing](Application-Testing)
 
+### [How To](How-To) 
 ### [Features](Features)
-* [Routing](Routing)
-* …
-
-### [Under the Hood](Under-the-Hood)
-* [Pipeline](Pipeline)
-* …
+### [Advanced](Advanced)
