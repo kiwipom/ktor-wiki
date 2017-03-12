@@ -1,3 +1,6 @@
+Compression feature adds ability to compress outgoing content using gzip, deflate or custom encoder and thus reduce
+size of the response.
+
 ```kotlin
 install(Compression)
 ```
