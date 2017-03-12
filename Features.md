@@ -39,13 +39,13 @@ we could simply write
     }
 ```
 
-## Built-in Features
+### Built-in Features
 
 Ktor comes with a number of ready-made features that can be installed into your application:
 
 > Some features might need adding an extra dependency to your project. See feature pages for more details.
 
-### Application Features
+#### Application Features
 
 * [Routing](Feature-Routing): attaches code to specific path/query/method/header and extract parameters from placeholders
 * [Sessions](Feature-Sessions): stores and retrieves additional information attached to client session
@@ -55,7 +55,7 @@ Ktor comes with a number of ready-made features that can be installed into your 
 * [File type mapping](Feature-File-Mapping): maps file extension to mime type for static file serving
 * [Static content](Feature-Static-Content): serves streams of data from local file system with full asynchronous support
 
-### HTTP transport features
+#### HTTP transport features
 
 * [Compression](Feature-Compression): enables gzip/deflate compression when client accepts it
 * [Conditional Headers](Feature-Conditional-Headers): sends 304 Not Modified response when if-modified-since/etag indicate content is the same
@@ -64,7 +64,7 @@ Ktor comes with a number of ready-made features that can be installed into your 
 * [CORS](Feature-CORS): verifies and sends headers according to cross-origin resource sharing control
 * [HSTS and https redirect](Feature-HSTS): supports strict transport security
 
-## Custom features
+### Custom features
 
 You can develop your own features and reuse them across your Ktor applications, or share with the community. Typical 
 feature has the following structure:
