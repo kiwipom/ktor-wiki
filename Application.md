@@ -28,3 +28,23 @@ Most functions available on `ApplicationCall` (such as `respondText` above) are 
 can potentially execute asynchronously.
  
 See advanced topic [Pipeline](Advanced-Pipeline) for more information on mechanics of processing `ApplicationCall`s 
+
+
+
+### The Application Object
+
+A Ktor Application typically consists of a series of [Features](Features) and one or more routes that handle requests. You can think of features as functionality 
+that is injected into the request and response pipeline. A typical application would have a series of features such as `DefaultHeaders` which add headers to every outgoing
+response. One core feature is `Routing` which allows us to define routes to handle requests. 
+
+```kotlin
+fun Application.main() {
+    install(DefaultHeaders) 
+    install(Routing) { 
+        get("/") { 
+            call.respondText("Hello, World!")  
+        }
+    }
+}
+```
+
