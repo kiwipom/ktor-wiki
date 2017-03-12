@@ -6,7 +6,7 @@ This tutorial will guide you through the steps on how to create a simple self-ho
 ### Including the right dependencies
 
 Ktor is split up into several groups of modules, allowing us to include only the functionality that we need. For a list of these modules please see [Artifacts](Artifacts). In our case we
-only need to include `ktor-core` and `ktor-netty`.  
+only need to include `ktor-netty` (`ktor-core` which is required for any Ktor application is included transitively on including the former).  
 
 These dependencies are hosted on [Bintray](https://bintray.com/kotlin/ktor) and as such the right 
 repositories need to be added to our build script. 
@@ -27,9 +27,9 @@ Gradle:
 
 ### Creating a self-hosted Application 
 
-Ktor allows applications to be hosted under Application Server such as TomCat, or self-host, using Jetty or Netty. In this tutorial we're going to see how to self-host using Netty. 
+Ktor allows applications to be hosted under Application Server such as Tomcat, or self-host, using Jetty or Netty. In this tutorial we're going to see how to self-host using Netty. 
 
-We begin by creating an `embeddedNettyServer`, passing in the port as the first argument and the actual application code as the second argument. The code below defines
+We begin by creating an `embeddedNettyServer`, passing in the port as the first argument and the actual application code as the third argument (second argument is the host which by default is 0.0.0.0). The code below defines
 a single route that responds to the `GET` verb on the url `/` with the text `Hello, world!`
 
 Once we've defined the routes, we start the server by calling `server.start`, passing as argument a boolean to indicate whether we want the main thread

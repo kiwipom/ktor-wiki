@@ -1,22 +1,51 @@
-Ktor is an extensible system and each extension comes in the form of a `Feature`. A feature is installed into application
-using an `install` function which accepts an instance (typically an `object`) of `ApplicationFeature` type. 
+## Features
 
-The following example installs a [Routing](Feature-Routing) feature and configures it:
+A Ktor Application typically consists of a series of [Features](Features). You can think of features as functionality 
+that is injected into the request and response pipeline. A typical application would have a series of features such as `DefaultHeaders` which add headers to every outgoing
+response, `Routing` which allows us to define routes to handle requests, etc.
+
+A feature is "installed" into the [Application](Application) using the `install` function
+
+
 ```kotlin
 fun Application.main() {
+    install(DefaultHeaders) 
+    install(CallLogging)
+    install(Routing) { 
+        get("/") { 
+            call.respondText("Hello, World!")  
+        }
+    }
+}
+```
+Some common feature such as `Routing` come with helper functions, which are defined as extension functions to `Application`, making the code
+somewhat more fluent. For instance, instead of writing
+
+```kotlin
     install(Routing) {
         get("/") {
             call.respondText("Hello, World!")
         }
     }
-}
 ```
+
+we could simply write
+
+```kotlin
+    routing {
+        get("/") {
+            call.respondText("Hello, World!")
+        }
+    }
+```
+
+### Built-in Features
 
 Ktor comes with a number of ready-made features that can be installed into your application:
 
 > Some features might need adding an extra dependency to your project. See feature pages for more details.
 
-### Application Features
+#### Application Features
 
 * [Routing](Feature-Routing): attaches code to specific path/query/method/header and extract parameters from placeholders
 * [Sessions](Feature-Sessions): stores and retrieves additional information attached to client session
@@ -26,7 +55,7 @@ Ktor comes with a number of ready-made features that can be installed into your 
 * [File type mapping](Feature-File-Mapping): maps file extension to mime type for static file serving
 * [Static content](Feature-Static-Content): serves streams of data from local file system with full asynchronous support
 
-### HTTP transport features
+#### HTTP transport features
 
 * [Compression](Feature-Compression): enables gzip/deflate compression when client accepts it
 * [Conditional Headers](Feature-Conditional-Headers): sends 304 Not Modified response when if-modified-since/etag indicate content is the same

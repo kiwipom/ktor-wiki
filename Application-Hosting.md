@@ -1,7 +1,6 @@
-> This is a placeholder page
+## Hosting Applications
 
-(How to host Ktor applications in various containers)
-
+Ktor Applications can be self-hosted or hosted in an Application Server. This section shows to how host Ktor applications externally.
 
 ### Hosting an application in an external host
 
@@ -34,7 +33,8 @@ Running hosted application in a development environment is supported by using de
     
 See also: [Hosting](Hosting), [Configuration](Configuration)
 
-### Use automatic reloading
+#### Use automatic reloading
+
 Ktor can automatically reload Application when changes to class files are detected, i.e. when you build the Application.
 Enable this feature by adding `autoreload` configuration to `application.conf`:
 ```conf
