@@ -18,6 +18,26 @@ fun Application.main() {
     }
 }
 ```
+Some commons feature such as `Routing` come with helper functions, which are defined as extension functions to `Application`, making the code
+somewhat more fluent. For instance, instead of writing
+
+```kotlin
+    install(Routing) {
+        get("/") {
+            call.respondText("Hello, World!")
+        }
+    }
+```
+
+we could simply write
+
+```kotlin
+    routing {
+        get("/") {
+            call.respondText("Hello, World!")
+        }
+    }
+```
 
 ## Built-in Features
 
