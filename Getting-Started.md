@@ -1,4 +1,4 @@
-## Create a project 
+### Create a project 
 Create a Kotlin project [with Maven](https://kotlinlang.org/docs/reference/using-maven.html) 
   or [with Gradle](https://kotlinlang.org/docs/reference/using-gradle.html)
   
