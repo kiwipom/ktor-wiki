@@ -10,11 +10,11 @@ how to approach particular tasks.
 The best place to start is with the [Getting Started](Getting-Started) tutorial. It shows you how to get an application up and running in no time. From there, you can then 
 dig into the different areas. A recommended tour however would be:
 
-[Getting Started](Getting-Started)
-[Understanding the Application object](Application)
-[Features](Features)
-[Hosting Options](Application-Hosting)
-[Testing Applications](Application-Testing)
+* [Getting Started](Getting-Started)
+* [Understanding the Application object](Application)
+* [Features](Features)
+* [Hosting Options](Application-Hosting)
+* [Testing Applications](Application-Testing)
 
 Check our extensive list of [How To](howto/Home) topics to learn specific features and use cases.
 
