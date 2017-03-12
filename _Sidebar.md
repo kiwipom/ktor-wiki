@@ -6,6 +6,7 @@
 * [Hosting](Hosting)
 * [Lifecycle](Lifecycle)
 * [Automatic Reload](Automatic-Reload)
+* [Testing](Testing)
 * …
 
 ### [Features](Features)
