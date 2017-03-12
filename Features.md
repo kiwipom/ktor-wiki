@@ -1,16 +1,25 @@
-Ktor is an extensible system and each extension comes in the form of a `Feature`. A feature is installed into application
-using an `install` function which accepts an instance (typically an `object`) of `ApplicationFeature` type. 
+## Features
 
-The following example installs a [Routing](Feature-Routing) feature and configures it:
+A Ktor Application typically consists of a series of [Features](Features). You can think of features as functionality 
+that is injected into the request and response pipeline. A typical application would have a series of features such as `DefaultHeaders` which add headers to every outgoing
+response, `Routing` which allows us to define routes to handle requests, etc.
+
+A feature is "installed" into the [Application](Application) using the `install` function
+
+
 ```kotlin
 fun Application.main() {
-    install(Routing) {
-        get("/") {
-            call.respondText("Hello, World!")
+    install(DefaultHeaders) 
+    install(CallLogging)
+    install(Routing) { 
+        get("/") { 
+            call.respondText("Hello, World!")  
         }
     }
 }
 ```
+
+## Built-in Features
 
 Ktor comes with a number of ready-made features that can be installed into your application:
 
@@ -35,7 +44,7 @@ Ktor comes with a number of ready-made features that can be installed into your 
 * [CORS](Feature-CORS): verifies and sends headers according to cross-origin resource sharing control
 * [HSTS and https redirect](Feature-HSTS): supports strict transport security
 
-### Custom features
+## Custom features
 
 You can develop your own features and reuse them across your Ktor applications, or share with the community. Typical 
 feature has the following structure:
