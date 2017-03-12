@@ -52,7 +52,7 @@ gzip {
 }
 ```
 
-## Custom encoders
+## Extensibility
 
 You can provide your own encoder by implementing `CompressionEncoder` interface and providing configuration function. 
 Since content can be provided as a `ReadChannel` or `WriteChannel` it should be able to compress in both ways. 
