@@ -1,4 +1,4 @@
-`Application` class is main processing unit of a web application. It owns [pipeline](Pipeline) for handling
+`Application` instance is a main unit of a web application. It owns [pipeline](Pipeline) for handling
 application requests. HTTP requests received by host are translated into `ApplicationCall` instances.
 `ApplicationCall` enters pipeline and goes through installed interceptors until it is fully handled 
 and `ApplicationResponse` is completed.
@@ -24,6 +24,6 @@ when request is asking for a root page.
 Of course, you don't need to handle URIs manually like this, there is a [routing](Routing) facility that does this
  and a lot more for you. 
  
-Many functions available on `ApplicationCall` (such as `respondText` above) return `Nothing`, indicating that they 
-can potentially execute asynchronously. Such functions should be called last in an interceptor. 
+Most functions available on `ApplicationCall` (such as `respondText` above) are `suspend` functions, indicating that they 
+can potentially execute asynchronously. 
 See [Pipeline](Pipeline) for more information on mechanics of processing `ApplicationCall`s 
