@@ -7,22 +7,26 @@ how to approach particular tasks.
 
 ## Where to begin
 
-This reference is designed for you to set up and run a Ktor application quickly. 
-Start with [Getting Started](Getting-Started) and proceed to advanced topics as needed.
-Check our extensive list of [How To](How-To) topics to learn specific features and use cases.
+The best place to start is with the [Getting Started](Getting-Started) tutorial. It shows you how to get an application up and running in no time. From there, you can then 
+dig into the different areas. A recommended tour however would be:
 
-## Understanding Ktor
+[Getting Started](Getting-Started)
+[Understanding the Application object](Application)
+[Features](Features)
+[Hosting Options](Application-Hosting)
+[Testing Applications](Application-Testing)
+
+Check our extensive list of [How To](howto/Home) topics to learn specific features and use cases.
+
+## Advanced Topics
+
+Once you've covered the basics, you can look at some of the [Advanced](Advanced) to understand how Ktor works under the covers and how you can extend it
+with new functionality.
  
-When you want to go deeper into Ktor mechanics, learn how to extend it, develop your own reusable installable features,
- provide transforms, or contribute to the main project, you will need to learn how it works. 
- 
-See [Advanced](Advanced) topics for more information.
- 
-## Projects
+## Sample Projects
 
 Ktor comes with a number of [sample projects](https://github.com/Kotlin/ktor/tree/master/ktor-samples), but if you 
-want to see how Ktor is used in a real world project, check out [Open Source Projects](Open-Source-Projects).
- 
+want to see how Ktor is used in a real world project, check out some [Open Source Projects](Open-Source-Projects).
  
 
 
