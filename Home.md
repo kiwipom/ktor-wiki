@@ -11,7 +11,7 @@ The best place to start is with the [Getting Started](Getting-Started) tutorial.
 dig into the different areas. A recommended tour however would be:
 
 * [Getting Started](Getting-Started)
-* [Understanding the Application object](Application)
+* [Understanding the Application interface](Application)
 * [Features](Features)
 * [Hosting Options](Application-Hosting)
 * [Testing Applications](Application-Testing)
