@@ -14,6 +14,7 @@ dig into the different areas. A recommended tour however would be:
 * [Understanding the Application interface](Application)
 * [Features](Features)
 * [Hosting Options](Application-Hosting)
+* [Structure Applications](Application-Structure)
 * [Testing Applications](Application-Testing)
 
 Check our extensive list of [How To](howto/Home) topics to learn specific features and use cases.
