@@ -1,6 +1,6 @@
 ## StatusPages Feature
 
-The StatusPages [Feature](Features) allows ktor applications to respond appropriately to any failure state. This feature is installed using the standard application configuration:
+The StatusPages [Feature](Features) allows Ktor applications to respond appropriately to any failure state. This feature is installed using the standard application configuration:
 
 ```
 fun Application.main() {
