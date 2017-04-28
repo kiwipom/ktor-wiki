@@ -1,5 +1,3 @@
-## StatusPages Feature
-
 The StatusPages [Feature](Features) allows Ktor applications to respond appropriately to any failure state. This feature is installed using the standard application configuration:
 
 ```
