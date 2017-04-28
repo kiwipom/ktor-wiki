@@ -37,14 +37,13 @@ of the application to block.
 
 ```kotlin
 fun main(args: Array<String>) {
-    val server = embeddedNettyServer(8080) {
+    val server = embeddedServer(Netty, 8080) {
         routing {
             get("/") {
-                call.respondText(ContentType.Text.Html, "Hello, world!")
+                call.respondText("Hello, world!", ContentType.Text.Html)
             }
         }
     }
-    
     server.start(wait = true)
 }
 ```
