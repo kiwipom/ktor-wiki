@@ -8,7 +8,7 @@ and outgoing response. In addition to these, it also provides some useful functi
 asynchronously, `ApplicationCall` also represents the logical execution context with `Attributes` to pass data between various parts of the pipeline.
 
 Installing interceptor into pipeline is the primary method to alter the processing of an `ApplicationCall`.
-Nearly all Ktor [Features](Features) of Ktor are interceptors that perform various operations in different phases of
+Nearly all Ktor [Features](Features) are interceptors that perform various operations in different phases of
 the application call processing. 
 
 ```kotlin
