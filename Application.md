@@ -4,7 +4,7 @@ An `Application` instance is the main unit of a Ktor Application. When a request
 consists of one or more interceptors that are previously installed, providing certain functionality such as routing, compression, etc.
 
 The `ApplicationCall` provides access to two main properties `ApplicationRequest` and `ApplicationResponse`. As their names indicate, they correspond to the incoming request
-and outgoing response. In addition to these, it als provides some useful functions to help response to client requests. Given that pipelines can be executed
+and outgoing response. In addition to these, it also provides some useful functions to help response to client requests. Given that pipelines can be executed
 asynchronously, `ApplicationCall` also represents the logical execution context with `Attributes` to pass data between various parts of the pipeline.
 
 Installing interceptor into pipeline is the primary method to alter the processing of an `ApplicationCall`.
